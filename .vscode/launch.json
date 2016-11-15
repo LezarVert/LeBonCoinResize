@@ -15,7 +15,10 @@
                 "WaitOnNormalExit",
                 "RedirectOutput"
             ],
-            "env": {"name":"value"}
+            "env": {"name":"value"},
+            "args": [
+                "G:\\python.jpg"
+            ]
         }
     ]
 }
