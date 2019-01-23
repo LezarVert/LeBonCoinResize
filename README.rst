@@ -3,6 +3,8 @@ LeBonCoinResize
 Retaille les images pour les mettre sur le bon coin
 Résolution max : 1000x1000
 
+Fonctionne sous Windows
+
 Instruction
 -----------
 Ajouter un raccourci vers ce script dans "Envoyé vers" et faite un clic droit sur un fichier image.
@@ -24,6 +26,8 @@ LeBonCoinResize
 ===============
 Resize images for put on the website "Le Bon coin"
 Resolution max : 1000x1000
+
+Works on Windows
 
 Instruction
 -----------
