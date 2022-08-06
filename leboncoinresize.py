@@ -55,11 +55,14 @@ def test_copy_and_resize(_path):
     Keyword arguments:
         _path -- path of the file
     '''
-    if is_image_and_not_py(_path) and file_size_ok(_path):
-        path_explode = os.path.splitext(_path)
-        path_out = os.path.splitext(_path)[0] + "-py" + path_explode[1]
-        shutil.copyfile(_path, path_out)
-        resize_image(path_out)
+    if os.path.exists(_path):
+        if is_image_and_not_py(_path) and file_size_ok(_path):
+            path_explode = os.path.splitext(_path)
+            path_out = os.path.splitext(_path)[0] + "-py" + path_explode[1]
+            shutil.copyfile(_path, path_out)
+            resize_image(path_out)
+    else:
+        print("File " + _path + ' not found.')
 
 for path in sys.argv:
     if os.path.isdir(path):
